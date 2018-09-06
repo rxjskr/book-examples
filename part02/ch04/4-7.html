@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+    </head>
+    <body>
+        <div id="displayArea">
+            0secs
+        </div>
+        <button id="stop_btn" type="button">Stop</button>
+        <script>
+            const { interval, fromEvent } = rxjs;
+            const { take, takeUntil } = rxjs.operators;
+            interval(1000)
+                .pipe(
+                    take(100),
+                    takeUntil(fromEvent(document.querySelector('#stop_btn'), 'click'))
+                )
+                .subscribe(x => document.querySelector('#displayArea').innerHTML = `${x+1}secs`);
+        </script>
+    </body>
+</html>
+

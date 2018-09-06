@@ -1,0 +1,16 @@
+{
+  "name": "rxjs-examples",
+  "version": "1.0.0",
+  "description": "rxjs examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "node-fetch": "^2.2.0",
+    "rxjs": "^6.2.2"
+  }
+}

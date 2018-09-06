@@ -1,0 +1,16 @@
+{
+  "name": "rxjs_testing",
+  "version": "1.0.0",
+  "description": "RxJS 테스트 예제",
+  "scripts": {
+    "start": "mocha",
+    "test": "mocha"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^6.2.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
