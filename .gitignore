@@ -3,5 +3,5 @@ node_modules/
 *.iml
 .idea/
 npm-debug.log
-
+package-lock.json
 
